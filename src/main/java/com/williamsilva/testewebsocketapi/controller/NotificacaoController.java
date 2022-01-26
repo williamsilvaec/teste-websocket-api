@@ -25,4 +25,9 @@ public class NotificacaoController {
 
         return "Notificação enviada!";
     }
+
+    @GetMapping("/count")
+    public Integer count() {
+        return this.notificacao.getContador();
+    }
 }
